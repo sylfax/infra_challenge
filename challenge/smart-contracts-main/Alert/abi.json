@@ -1,0 +1,61 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_refClient",
+				"type": "string"
+			},
+			{
+				"internalType": "int256[]",
+				"name": "_alertTypes",
+				"type": "int256[]"
+			},
+			{
+				"internalType": "string",
+				"name": "_comment",
+				"type": "string"
+			}
+		],
+		"name": "add_alert_message",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "get_all_alerts",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "REF_CLIENT",
+						"type": "string"
+					},
+					{
+						"internalType": "int256[]",
+						"name": "ALERT_TYPES",
+						"type": "int256[]"
+					},
+					{
+						"internalType": "string",
+						"name": "COMMENT",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Contract.CLIENT_ALERT[]",
+				"name": "all_alerts",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

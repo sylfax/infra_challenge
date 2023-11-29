@@ -1,0 +1,79 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_refClient",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "_largeTransactionVolume",
+				"type": "int256"
+			}
+		],
+		"name": "check_aml_rule2",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_refClient",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "_receiverNumber",
+				"type": "int256"
+			}
+		],
+		"name": "check_aml_rule7",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_refClient",
+				"type": "string"
+			}
+		],
+		"name": "get_aml_status",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "refClient",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "rule2_status",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "rule7_status",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

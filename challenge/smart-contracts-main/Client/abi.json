@@ -1,0 +1,130 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "refClient",
+				"type": "string"
+			}
+		],
+		"name": "Client_profile_updated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "refClient",
+				"type": "string"
+			}
+		],
+		"name": "New_Client_Registered",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_refClient",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_hashProfile",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "_seller",
+				"type": "bool"
+			},
+			{
+				"internalType": "string",
+				"name": "_time",
+				"type": "string"
+			}
+		],
+		"name": "add_client_ref",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_refClient",
+				"type": "string"
+			}
+		],
+		"name": "get_client_ref",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "refClient",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "hashProfile",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "previousHashProfile",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "seller",
+				"type": "bool"
+			},
+			{
+				"internalType": "string",
+				"name": "time",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_refClient",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_newHashProfile",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_time",
+				"type": "string"
+			}
+		],
+		"name": "update_client_profile",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
